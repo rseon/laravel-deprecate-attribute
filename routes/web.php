@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $user = User::find(1);
+    // dump($user->name); // Must throw deprecation (ok)
+    dd($user->toArray()); // Must display array without the "name" attribute (ko, throws exception)
 });
