@@ -6,7 +6,7 @@ Create the file : `database/database.sqlite`, then run :
 - `php artisan migrate --seed`
 - `php artisan serve`
 
-Then visit http://127.0.0.1:8000/, you can read the files [routes/web.php] and [app/Models/User.php]
+Then visit http://127.0.0.1:8000/, you can read the files [routes/web.php](routes/web.php) and [app/Models/User.php](app/Models/User.php)
 
 What I want :
 
